@@ -17,6 +17,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="280"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <!-- Segmented control starts here-->
         <!-- Android corner radius 20-->
         <!-- ios Corner radius 10-->
         <!-- Background Frame -->
@@ -64,8 +65,10 @@
             </StackLayout.GestureRecognizers>
             <Label x:Name="text3" Text="Shadow2" TextColor="Black" WidthRequest="80" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
         </StackLayout>
+        <!-- Segmented control ends here-->
 
 
+        <!-- shadow1 content view-->
         <ContentView x:Name="shadow1ContentView" Grid.Row="1" IsVisible="false" VerticalOptions="Center" HorizontalOptions="Center" Margin="20">
         <Grid VerticalOptions="Center" HorizontalOptions="Center">
         
@@ -76,6 +79,7 @@
         </Grid>
         </ContentView>
 
+        <!-- shadow2 content view-->
         <ContentView x:Name="shadow2ContentView" Grid.Row="1" IsVisible="false" VerticalOptions="Center" HorizontalOptions="Center" Margin="20">
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <OnPlatform x:TypeArguments="View">
@@ -106,6 +110,7 @@
         </StackLayout>
         </ContentView>
 
+        <!-- default shadow content view-->
         <ContentView x:Name="defaultContentView" Grid.Row="1" IsVisible="true" VerticalOptions="Center" HorizontalOptions="Center" Margin="20">
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <Label Text="Default Frame with shadow"></Label>
